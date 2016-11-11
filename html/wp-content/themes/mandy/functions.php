@@ -17,4 +17,18 @@ function mandy_theme_css() {
    add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'mandy_setup' );
+
+function show_wp_title(){
+    global $page, $paged;
+    wp_title( '-', true, 'right' );
+    // 添加网站标题.
+    //bloginfo( 'name' );
+    // 为首页添加网站描述.
+    //$site_description = get_bloginfo( 'description', 'display' );
+    //if ( $site_description && ( is_home() || is_front_page() ) )
+    //echo ' - ' . $site_description;
+    // 如果有必要，在标题上显示一个页面数.
+    //if ( $paged >= 2 || $page >= 2 )
+    //echo ' - ' . sprintf( '第%s页', max( $paged, $page ) );
+}
 ?>

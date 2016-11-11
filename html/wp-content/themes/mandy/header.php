@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
+<title><?php if(function_exists('show_wp_title')){show_wp_title();} ?></title>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

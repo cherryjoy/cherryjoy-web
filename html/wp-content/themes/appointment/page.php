@@ -1,6 +1,7 @@
 <?php
 get_header();
 get_template_part('index','banner'); ?>
+<?php include_once("baidu_js_push.php") ?>
 <!-- Blog Section with Sidebar -->
 <div class="page-builder">
 	<div class="container">

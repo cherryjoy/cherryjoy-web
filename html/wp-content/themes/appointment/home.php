@@ -15,7 +15,7 @@
 		get_template_part('index','home-callout'); 	
 
 		//****** get index News  ********
-		get_template_part('index', 'news');
+		//get_template_part('index', 'news');
 				
 		get_footer();
 		}
