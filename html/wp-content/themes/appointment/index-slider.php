@@ -18,13 +18,13 @@ if($slider_setting['home_banner_enabled'] == 0 ) {
 		</ol>
 		<div class="carousel-inner" role="listbox">
 		<div class="item active">
-		   <img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/slide/slide1.jpg">
+		   <img src="http://120.77.50.198/wp-content/themes/appointment/images/slide/slide1.jpg">
 		</div>  
 		<div class="item">
-		   <img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/slide/slide2.jpg">
+		   <img src="http://120.77.50.198/wp-content/themes/appointment/images/slide/slide2.jpg">
 		</div>
 		<div class="item">
-		  <img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/slide/slide3.jpg">
+		  <img src="http://120.77.50.198/wp-content/themes/appointment/images/slide/slide3.jpg">
 		</div>
 		</div>  
 		<ul class="carou-direction-nav">
