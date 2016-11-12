@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
 <title><?php if(function_exists('show_wp_title')){show_wp_title();} ?></title>
+<meta name="keywords"  content="麻将，红中麻将，湖湘麻将，筑志红中麻将，樱桃红中麻将，平江红中麻将，游戏，麻将游戏，红中麻将官网，好友麻将，亲友麻将" /><meta name="红中麻将是平江地区一种休闲娱乐的麻将，节奏快速，极易胡牌。。。"  content="这里填写你网站的描述"/>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
