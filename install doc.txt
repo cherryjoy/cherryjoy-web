@@ -1,5 +1,5 @@
 网址管理员账号密码
-smartlean
+admin
 sH1fNbtv8Vyif(TwX@
 
 centos6.5 64位系统安装nginx
