@@ -31,7 +31,7 @@ function theme_setup_data()
 	//Service section settings
 	'service_section_enabled' => '',
 	'service_title' => __('樱桃红中麻将','appointment'),
-	'service_description' => __('樱桃红中麻将是平江地区一种休闲娱乐的麻将，节奏快速，极易胡牌。。。','appointment'),
+	'service_description' => __('红中麻将是平江地区一种休闲娱乐的麻将，节奏快速，极易胡牌。。。','appointment'),
 	'service_one_icon' => 'fa-mobile',
 	'service_one_title'=>__('拖至底部下载','appointment'),
 	'service_one_description' => __('','appointment'),
