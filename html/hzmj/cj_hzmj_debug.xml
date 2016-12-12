@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <updateFile>
-<serverlist updateserver="http://120.77.50.198/hzmj/update/" updateiosserver="http://120.77.50.198/hzmj/updateios/" noticeurl="http://www.cherryjoy.com/notice.xml" lancherurl="http://hzmj.cherryjoy.com/serverlist/download.html" lancherandroidurl="http://120.77.50.198/hzmj/cjhzmj.apk" lancheriosurl="http://hzmj.cherryjoy.com/serverlist/download.html" voiceurl="http://120.77.50.198:9999/" inviteurl="http://hzmj.cherryjoy.com/serverlist/download.html" logurl="http://120.77.50.198:7788/" activecode="true" lancherversion="1.0.2" lancherMode = "1" version="1.0.3">
+<serverlist updateserver="http://120.77.50.198/hzmj/update/" updateiosserver="http://120.77.50.198/hzmj/updateios/" noticeurl="http://www.cherryjoy.com/notice.xml" lancherurl="http://hzmj.cherryjoy.com/serverlist/download.html" lancherandroidurl="http://120.77.50.198/hzmj/cjhzmj.apk" lancheriosurl="http://hzmj.cherryjoy.com/serverlist/download.html" voiceurl="http://120.77.50.198:9999/" inviteurl="http://hzmj.cherryjoy.com/serverlist/download.html" logurl="http://120.77.50.198:7788/" activecode="true" lancherversion="1.0.2" lancherMode = "1" version="1.0.8">
 	<server name="麻将1-10区">
 			   <subserver server_name="测试服" number="1" server_ID="584002" recommend="0" new="1" game="120.77.50.198:11400" />
     </server>
