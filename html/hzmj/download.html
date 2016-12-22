@@ -11,6 +11,9 @@
             width: 100%;
             height: 100%;
         }
+    #weixin-tip{display:none;position:fixed;left:0;top:0;background:rgba(0,0,0,0.8);filter:alpha(opacity=80);width:100%;height:100%;z-index:100;}
+#weixin-tip p{text-align:center;margin-top:10%;padding:0 5%;position:relative;}
+#weixin-tip .close{color:#fff;padding:5px;font:bold 20px/24px simsun;text-shadow:0 1px 0 #ddd;position:absolute;top:0;left:5%;}
 </style>
 </head>
 <body>
@@ -34,9 +37,7 @@
                     <td>
                         <div class="li">
                             <img class="doc" src="http://120.77.50.198/wp-content/uploads/android.jpg" />
-                            <a href="http://fir.im/hzandroid" title="android">
-                                <img class="doc" src="http://120.77.50.198/wp-content/uploads/anbutton.png" />
-                            </a>
+                            <img src="http://120.77.50.198/wp-content/uploads/anbutton.png" onclick="downandroid();"></a>
                         </div>
                     </td>
                 </tr>
@@ -48,7 +49,7 @@
                     <td>
                         <div class="li odd">
                             <img class="doc" src="http://120.77.50.198/wp-content/uploads/ios.jpg" />
-                            <a href="http://fir.im/hzapple" title="ios">
+                            <a href="https://fir.im/hzapple" title="ios">
                                 <img class="doc" src="http://120.77.50.198/wp-content/uploads/iosbutton.png" />
                             </a>
                         </div>
@@ -59,6 +60,39 @@
     </tr>
     </tbody>
 </table>
+
+<div id="weixin-tip"><p><img src="http://120.77.50.198/wp-content/uploads/live_weixin.png" alt="微信打开"/><span id="close" title="关闭" class="close">×</span></p></div>
+    <script type="text/javascript">
+    var is_weixin = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    function downandroid() {
+            if (is_weixin()) {
+                var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
+                //兼容IOS，不需要的可以去掉
+                var tip = document.getElementById("weixin-tip");
+                var close = document.getElementById("close");
+                tip.style.height = winHeight + "px";
+                //兼容IOS弹窗整屏
+                tip.style.display = "block";
+                close.onclick = function () {
+                    tip.style.display = "none";
+                }
+            } else {
+                window.location.href = "./jump.html";
+                return;
+                doLocation("./jump.html");
+            }
+        }
+    
+
+    </script>
+
 
 <object id="b5tplugin" type="application/x-bang5taoplugin" width="0" height="0" style="position:absolute;left:-9000px;top:-9000px;"></object>
 </body>
