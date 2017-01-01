@@ -7,28 +7,17 @@
 <body>
  <font size=7>
     <center>
-    游戏即将开始下载，请耐心等待<br/>
+    点击右上方，选择在浏览器中打开<br/>即可下载<br/>
     </center>
 </font>
-<p style="text-align:center"><img src="http://hzmj.applinzi.com/res/icon.png"  tppabs="" width="472" height="472"></p><br/>
-<script type="text/javascript"> 
-function timedMsg()
-{
-var t=setTimeout("closeWin();",1000);
 
-}
-</script> 
-<script type="text/javascript"> 
-function closeWin(){ 
-window.opener=null; 
-window.open('','_self',''); 
-window.close(); 
-} 
-</script> 
+<p style="text-align:center"><img src="ar.gif"  tppabs="" width="440" height="500"></p><br/>
+
 <script type="text/javascript">
     //document.write('-----------------------------------------');
     var u_agent = navigator.userAgent;
     var browser_name='Failed to identify the browser'; 
+
     var Terminal = {
             platform : function(){
                 var u = navigator.userAgent, app = navigator.appVersion;
@@ -39,24 +28,31 @@ window.close();
                 };
             }(),
         }
-         var theUrl = 'http://hzmj.applinzi.com/cjhzmj.apk'
+    var theUrl = 'download2px.html';
         if(Terminal.platform.android){      
-            theUrl = 'http://hzmj.applinzi.com/cjhzmj.apk'
+            theUrl = 'download2px.html'
+        }
+        else if(Terminal.platform.iPhone){
+            theUrl = 'ipa/iosdown.php'
+        }
+        else if(Terminal.platform.iPad){
+           theUrl = 'ipa/iosdown.php'
         }
     if(u_agent.indexOf('UCBrowser')>-1){ 
         //browser_name='UCBrowse'; 
         //document.write(browser_name);
-        location.href = theUrl; timedMsg();
+        location.href = theUrl; 
     }else if(u_agent.toLowerCase().match(/MicroMessenger/i)=="micromessenger")
     {
         if(u_agent.indexOf('Mac OS X')>-1){ 
-            location.href = theUrl;timedMsg();
+            location.href = theUrl;     
         }
     }else
     {
         //document.write(browser_name);
-        location.href = theUrl;timedMsg();
+        location.href = theUrl; 
     }
  </script>
+
 </body>
 </html>
